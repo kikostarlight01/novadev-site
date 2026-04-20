@@ -3,51 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NovaDev - Modern Software Solutions</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>NovaDev - Software Development Agency</title>
+    <style>
+        html{scroll-behavior:smooth;}
+        /* Basic Dark Theme & Typography */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #1e1e1e;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #4CAF50; /* Accent color for NovaDev */
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: #121212;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-weight: bold;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .cta-button:hover {
+            background-color: #66BB6A;
+            transform: translateY(-2px);
+        }
+        section {
+            padding: 80px 0;
+            border-bottom: 1px solid #333;
+        }
+        #features {
+            background-color: #1e1e1e;
+        }
+        .feature-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+            text-align: center;
+        }
+        .feature-item {
+            background-color: #2a2a2a;
+            padding: 30px;
+            border-radius: 10px;
+            flex: 1;
+            min-width: 280px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+        }
+        .feature-item h3 {
+            color: #4CAF50;
+        }
+        footer {
+            background-color: #1e1e1e;
+            text-align: center;
+            padding: 20px 0;
+            border-top: 1px solid #333;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">NovaDev</div>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>NovaDev</h1>
+            <p>Crafting exceptional software solutions.</p>
+            <a href="#contact" class="cta-button">Get a Quote</a>
+        </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero">
-            <div class="hero-content">
-                <h1>Crafting Exceptional Software Solutions</h1>
-                <p>NovaDev delivers cutting-edge, clean, and efficient web and application development tailored to your business needs.</p>
-                <a href="#contact" class="btn">Get a Quote</a>
-            </div>
-        </section>
+    <section id="hero">
+        <div class="container" style="text-align: center;">
+            <h2>Build the Future, Today.</h2>
+            <p style="font-size: 1.2em; margin-bottom: 30px;">We partner with ambitious companies to develop cutting-edge, scalable, and beautiful software products.</p>
+            <a href="#contact" class="cta-button" style="font-size: 1.1em;">Start Your Project</a>
+        </div>
+    </section>
 
-        <section id="features" class="features">
+    <section id="features">
+        <div class="container">
             <h2>What We Offer</h2>
             <div class="feature-grid">
-                <div class="feature-card">
-                    <h3>Modern Web Development</h3>
-                    <p>Building fast, responsive, and scalable web applications using pure HTML and CSS.</p>
+                <div class="feature-item">
+                    <h3>Full-Stack Development</h3>
+                    <p>Expertise across the entire stack, from robust backend APIs to sleek, responsive frontend interfaces.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Clean Code Philosophy</h3>
-                    <p>We focus on clean, maintainable code, ensuring your project is easy to understand and evolve.</p>
+                <div class="feature-item">
+                    <h3>Scalable Architecture</h3>
+                    <p>We build systems designed to grow. Focus on performance, security, and maintainability from day one.</p>
                 </div>
-                <div class="feature-card">
-                    <h3>Dedicated Partnership</h3>
-                    <p>More than just a vendor—we act as a true extension of your team, committed to your success.</p>
+                <div class="feature-item">
+                    <h3>Agile Partnership</h3>
+                    <p>Transparent communication and iterative development ensure the final product perfectly matches your vision.</p>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container" style="text-align: center;">
+            <h2>Ready to Collaborate?</h2>
+            <form action="YOUR_CONTACT_ENDPOINT" method="POST">
+                <div style="max-width: 500px; margin: 0 auto; text-align: left;">
+                    <div style="margin-bottom: 15px;">
+                        <label for="name" style="display: block; margin-bottom: 5px;">Name:</label>
+                        <input type="text" id="name" name="name" style="width: 100%; padding: 10px; border: 1px solid #444; border-radius: 5px; background-color: #2a2a2a; color: #e0e0e0;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="email" style="display: block; margin-bottom: 5px;">Email:</label>
+                        <input type="email" id="email" name="email" style="width: 100%; padding: 10px; border: 1px solid #444; border-radius: 5px; background-color: #2a2a2a; color: #e0e0e0;">
+                    </div>
+                    <div style="margin-bottom: 15px;">
+                        <label for="message" style="display: block; margin-bottom: 5px;">Message:</label>
+                        <textarea id="message" name="message" rows="5" style="width: 100%; padding: 10px; border: 1px solid #444; border-radius: 5px; background-color: #2a2a2a; color: #e0e0e0;"></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Send Message</button>
+                </div>
+            </form>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2024 NovaDev. All rights reserved. | Built with dedication.</p>
+        <div class="container">
+            <p>&copy; 2026 NovaDev. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
